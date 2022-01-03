@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e3fffa;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 8% 0 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+    margin: 30px 0 ;
+}
+.menu{
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    padding: 10px;
+}
+nav ul li a:hover{
+    color:#c74b30;
+    text-decoration: underline;
+}
+.row{
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin: 0 0 0 50px;
+}
+.col-1 h2{
+    font-size: 40px;
+}
+.col-1 h3{
+    font-size: 40px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 h4{
+    font-size: 30px;
+}
+.col-1 p{
+    font-size: 40px;
+    font-weight: 100;
+    color: #b7b7b7;
+}
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .vc{
+    width: 70%;
+    border-radius: 20px;
+}
+.social{
+    text-align: center;
+}
+.sl{
+    margin:60px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+@media only screen and (max-width:700px) {
+    nav ul{
+        width: 100%;
+        background-color: #8fcc92;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0 10px 0;
+
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu{
+      display: block;
+    }
+    #list{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+}
